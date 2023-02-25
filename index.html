@@ -23,35 +23,35 @@
         </header>
         <div class="grid">
             <div class="row">
-                <label class="cell" cell><input type="radio" onClick="playerMove(0)" id="0">
+                <label class="cell" id="0"><input type="radio" onClick="playerMove(0)">
                     <i class="material-symbols-outlined" id="10">close</i>
                 </label>
-                <label class="cell"><input type="radio" onClick="playerMove(1)" id="1">
+                <label class="cell" id="1"><input type="radio" onClick="playerMove(1)">
                     <i class="material-symbols-outlined" id="11">close</i>
                 </label>
-                <label class="cell"><input type="radio" onClick="playerMove(2)" id="2">
+                <label class="cell" id="2"><input type="radio" onClick="playerMove(2)">
                     <i class="material-symbols-outlined" id="12">close</i>
                 </label>
             </div>
             <div class="row">
-                <label class="cell"><input type="radio" onClick="playerMove(3)" id="3">
+                <label class="cell" id="3"><input type="radio" onClick="playerMove(3)">
                     <i class="material-symbols-outlined" id="13">close</i>
                 </label>
-                <label class="cell"><input type="radio" onClick="playerMove(4)" id="4">
+                <label class="cell" id="4"><input type="radio" onClick="playerMove(4)">
                     <i class="material-symbols-outlined" id="14">close</i>
                 </label>
-                <label class="cell"><input type="radio" onClick="playerMove(5)" id="5">
+                <label class="cell" id="5"><input type="radio" onClick="playerMove(5)">
                     <i class="material-symbols-outlined" id="15">close</i>
                 </label>
             </div>
             <div class="row">
-                <label class="cell"><input type="radio" onClick="playerMove(6)" id="6">
+                <label class="cell" id="6"><input type="radio" onClick="playerMove(6)">
                     <i class="material-symbols-outlined" id="16">close</i>
                 </label>
-                <label class="cell"><input type="radio" onClick="playerMove(7)" id="7">
+                <label class="cell" id="7"><input type="radio" onClick="playerMove(7)">
                     <i class="material-symbols-outlined" id="17">close</i>
                 </label>
-                <label class="cell"><input type="radio" onClick="playerMove(8)" id="8">
+                <label class="cell" id="8"><input type="radio" onClick="playerMove(8)">
                     <i class="material-symbols-outlined" id="18">close</i>
                 </label>
             </div>
@@ -71,20 +71,22 @@
             </div>
         </footer> 
     </main>
-    <div class="modalBg" id="bg">
+    <div class="resultModalBg" id="resultModalBg">
         <dialog class="result modal" id="resultModal">
-            <p>YOU WON!</p>
-            <p>X TAKES THE ROUND</p>
+            <p></p>
+            <p></p>
             <div class="modalBtn">
                 <button class="reset">QUIT GAME</button>
                 <button class="reset">NEXT ROUND</button>
             </div>
         </dialog>
+    </div> 
+    <div class="restartModalBg" id="restartModalBg">
         <dialog class="restart modal" id="restartModal">
             <p>RESTART GAME?</p>
             <div class="modalBtn">
                 <button class="reset" id="cancelRestart">NO, CANCEL</button>
-                <button class="reset">YES, RESTART</button>
+                <button class="reset" id="proceedRestart">YES, RESTART</button>
             </div>
         </dialog> 
     </div> 
